@@ -1,0 +1,33 @@
+[project]
+name = "llm-smolvlm"
+version = "0.1a0"
+description = "SmolVLM for LLM"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "llm",
+    "transformers",
+    "pillow",
+    "torch"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-smolvlm"
+Changelog = "https://github.com/simonw/llm-smolvlm/releases"
+Issues = "https://github.com/simonw/llm-smolvlm/issues"
+CI = "https://github.com/simonw/llm-smolvlm/actions"
+
+[project.entry-points.llm]
+smolvlm = "llm_smolvlm"
+
+[project.optional-dependencies]
+test = ["pytest"]
