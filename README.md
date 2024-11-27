@@ -18,7 +18,7 @@ llm install https://github.com/simonw/llm-smolvlm/archive/refs/heads/main.zip
 > [!WARNING]  
 > This model does not yet support conversations - you can use it to send single prompts but the `llm -c` and `llm chat` modes will not take previous messages into account.
 
-Run prompts against images like this:
+Run prompts against images like this - only URLs to images are supported at the moment.
 
 ```bash
 llm -m smolvlm 'describe this image' -a https://static.simonwillison.net/static/2024/pelicans.jpg
